@@ -2,6 +2,7 @@ package com.rok93.book.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 /**
  * 클래스명: Application
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 설정 된다. 특히나 @SpinrgBootApplication이 있는 위치부터 설정을 읽어가기 때문에 이 클래스는
  * 항상 프로젝트의 최상단에 위치해야만 한다.
  */
+@EnableJpaAuditing // JPA Auditing 활성화
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {

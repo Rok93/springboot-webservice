@@ -51,8 +51,8 @@ var index = {
         }).done(function () {
             alert('글이 수정되었습니다.')
             window.location.href = '/';
-        }).fail(function () {
-            alert(JSON.stringify(data))
+        }).fail(function (error) {
+            alert(JSON.stringify(error))
         });
 
     },
@@ -70,7 +70,6 @@ var index = {
         }).fail(function (error) {
             alert(JSON.stringify(error));
         })
-
     }
 };
 

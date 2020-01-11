@@ -17,5 +17,5 @@ public interface PostsRepository extends JpaRepository<Posts, Long> {
 
     // SpringDataJpa에서 제공하는 기본 메소드만으로 해결할 수 있다. 하지만 @Query가 훨씬 가독성이 좋으니 선택해서 사용하라
     @Query("SELECT p from Posts p ORDER BY p.id DESC")
-    List<Posts> findeAllDesc();
+    List<Posts> findAllDesc();
 }
